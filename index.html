@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Alakazam adivina tu número</title>
+</head>
+
+<body>
+    <div class="mt-5">
+    <h1 >¡Te has encontrado con un Alakazam!</h1>
+    <h2>Demostrará su poder intentando adivinar un número del 1 al 100 en el que estés pensando. ¿Listo?</h2>
+    <h3 id="adivinar-numero" style="display:none;"></h3>
+</div>
+    <div class="botones-container">
+        <button id="iniciar-juego" class="btn btn-outline-info" onclick="iniciarJuego()">Iniciar Juego</button>
+
+        <button class="btn btn-outline-info" onclick="respuestaUsuario('mas-bajo')" style="display:none;">Más
+            bajo</button>
+        <button class="btn btn-outline-info" onclick="respuestaUsuario('mas-alto')" style="display:none;">Más
+            alto</button>
+        <button class="btn btn-outline-info" onclick="respuestaUsuario('correcto')"
+            style="display:none;">Correcto</button>
+    </div>
+    <div class="Alakazam mt-5">
+        <img id="Alakazam" class="img-fluid" src="./assets/img/Alakazam-Pokemon-PNG-Isolated-HD.png" alt="Alakazam">
+    </div>
+    <script src="./adivinotunumero.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
